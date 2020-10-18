@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+	int arr[] = {10,100,200};
+	void*p = &arr[2];
+	
+	printf("%d",*(char*)p); //BY THIS POINTER TAKE A GARBAGE VALUE.
+	printf("%d",*p); //WITHOUT TYPECASTING IT IS GIVE AN ERROR
+	printf("%d",*(int*)p);   //THIS IS THE VALID EXPRESSION OF VOID POINTER.
+	
+	return 0;
+}
